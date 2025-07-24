@@ -1,0 +1,33 @@
+/* src/components/Footer.css */
+.footer {
+    background-color: #f9f9f9;
+    padding: 1rem 0.8rem;
+    font-size: 0.7rem;
+    color: #333;
+    text-align: center;
+    line-height: 1.5;
+    font-family: 'Noto Sans KR', sans-serif;
+    border-top: 1px solid #e0e0e0;
+}
+
+.footer-links {
+    margin-bottom: 0.8rem;
+}
+
+.footer-links span {
+    margin: 0 0.5rem;
+    color: #666;
+    cursor: pointer;
+}
+
+/* 모바일 대응 */
+@media (max-width: 600px) {
+    .footer {
+        font-size: 0.5rem;
+        padding: 1rem;
+    }
+
+    .footer-info {
+        text-align: left;
+    }
+}

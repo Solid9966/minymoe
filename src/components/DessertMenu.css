@@ -1,0 +1,40 @@
+.dessert-wrapper {
+    text-align: center;
+    padding: 2rem 1rem;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.dessert-wrapper h2 {
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+}
+
+.dessert-grid {
+    display: grid;
+    grid-template-columns:  repeat(2, 1fr);
+    gap: 1.5rem;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.dessert-card img {
+    width: 100%;
+    height: auto;            /*  원본 비율 유지 */
+    object-fit: contain;     /*  이미지 잘리지 않게 */
+    background-color: #f9f9f9; /*  빈 공간 채우기용 (선택) */
+    aspect-ratio: 4 / 3;     /*  균일한 이미지 박스 비율 유지 (선택) */
+}
+
+.dessert-info {
+    padding: 0.75rem 1rem;
+}
+
+.dessert-info h3 {
+    font-size: 1rem;
+    margin: 0.5rem 0 0.2rem;
+}
+
+.dessert-info p {
+    font-size: 0.9rem;
+    color: #666;
+}

@@ -1,0 +1,27 @@
+.home-wrapper {
+    text-align: center;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding-bottom: 3rem;
+}
+
+.intro-text {
+    margin-top: 5rem;          /* 여백 */
+    margin-top: 2rem;
+    font-size: 1.1rem;
+}
+
+.intro-text h2 {
+    margin-top: 1.5rem;
+    font-weight: bold;
+}
+
+/* 모바일 대응 */
+@media (max-width: 600px) {
+    .intro-text {
+        font-size: 0.8rem;
+    }
+
+    .intro-text h2 {
+        font-size: 1.0rem;
+    }
+}

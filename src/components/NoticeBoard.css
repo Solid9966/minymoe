@@ -1,0 +1,107 @@
+.notice-wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.notice-wrapper h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.notice-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+
+.notice-table th,
+.notice-table td {
+    padding: 0.75rem;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.notice-table th {
+    font-weight: bold;
+    background-color: #f9f9f9;
+}
+
+.notice-search {
+    margin-top: 1.5rem;
+    text-align: right;
+}
+
+.notice-search input {
+    padding: 0.4rem 0.6rem;
+    border: 1px solid #ccc;
+    font-size: 0.9rem;
+    margin-right: 0.5rem;
+}
+
+.notice-search button {
+    padding: 0.45rem 1rem;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+/* ✅ 카드 UI는 기본 숨김 */
+.notice-cards {
+    display: none;
+}
+
+/* 모바일용 */
+@media (max-width: 768px) {
+    .notice-wrapper {
+        padding: 1rem;
+    }
+
+    .notice-wrapper h2 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .notice-table {
+        display: none; /* ✅ 테이블 숨김 */
+    }
+
+    .notice-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
+    .notice-card {
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .notice-title {
+        font-weight: bold;
+        margin-bottom: 0.3rem;
+        font-size: 1rem;
+    }
+
+    .notice-meta {
+        font-size: 0.85rem;
+        color: #555;
+    }
+
+    .notice-search {
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .notice-search input {
+        width: 70%;
+        margin-bottom: 0.5rem;
+    }
+
+    .notice-search button {
+        width: 28%;
+    }
+}

@@ -1,0 +1,105 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 900;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: bold;
+    border-bottom: 1px solid #eee;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.nav-logo {
+    font-size: 1.5rem;
+}
+
+.nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu li {
+    display: inline-block;
+    margin-left: 1.2rem;
+    cursor: pointer;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.desktop-menu {
+    display: flex;
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+/* 모바일 */
+@media (max-width: 768px) {
+    .navbar {
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    .nav-logo {
+        margin: 0 auto;
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        left: 1rem;
+        z-index: 3100;
+    }
+
+    .desktop-menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 220px;
+        height: 100vh;
+        background-color: white;
+        padding: 2rem 1.5rem;
+        box-shadow: 2px 0 6px rgba(0, 0, 0, 0.1);
+        z-index: 3200;
+    }
+
+    .mobile-menu .nav-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
+    .mobile-menu .nav-menu li {
+        font-size: 1.1rem;
+        padding: 0.3rem 0;
+    }
+
+    .menu-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 3100;
+    }
+}
