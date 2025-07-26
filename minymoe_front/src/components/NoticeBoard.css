@@ -28,6 +28,17 @@
     background-color: #f9f9f9;
 }
 
+.notice-table button,     /* 데스크탑용 테이블 안의 버튼 */
+.notice-card button {     /* 모바일 카드 안의 버튼 */
+    padding: 0.3rem 0.6rem;
+    background-color: crimson;
+    color: white;
+    border: none;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+
 .notice-search {
     margin-top: 1.5rem;
     text-align: right;
@@ -46,6 +57,27 @@
     color: white;
     border: none;
     font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.notice-form {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.notice-form input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+}
+
+.notice-form button {
+    padding: 0.5rem;
+    background: black;
+    color: white;
+    border: none;
     cursor: pointer;
 }
 

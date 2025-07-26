@@ -1,0 +1,42 @@
+### Build ###
+/build/
+.gradle/
+*.class
+*.jar
+*.war
+*.log
+
+### Gradle Wrapper ###
+!gradle/wrapper/gradle-wrapper.jar
+
+### IntelliJ IDEA ###
+.idea/
+*.iml
+out/
+
+### Eclipse / STS (불필요하면 삭제 가능) ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache
+bin/
+
+### VS Code ###
+.vscode/
+
+### OS / Misc ###
+.DS_Store
+Thumbs.db
+
+### NetBeans (사용 안 하면 생략 가능) ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### Env Files / Secret Keys ###
+.env

@@ -11,3 +11,23 @@ export const fetchNotices = async () => {
         return [];
     }
 };
+
+export const postNotice = async (newNotice) => {
+    try {
+        const response = await axios.post(API_URL, newNotice);
+        return response.data;
+    } catch (error) {
+        console.error('📛 글 등록 실패:', error);
+        throw error;
+    }
+};
+
+// 삭제 요청 함수
+export const deleteNotice = async (id) => {
+    try {
+        await axios.delete(`${API_URL}/${id}`);
+    } catch (err) {
+        console.error("❌ 삭제 실패:", err);
+        throw err;
+    }
+};
